@@ -1,0 +1,10 @@
+# Konfigurasi deploy Netlify untuk SIM Karang Taruna Dusun Tagog.
+# Env vars (NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
+# NEXT_PUBLIC_APP_URL) di-set lewat dashboard Netlify, bukan di file ini.
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
